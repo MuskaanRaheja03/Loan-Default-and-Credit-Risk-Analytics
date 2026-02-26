@@ -1,74 +1,121 @@
-# 📊 Loan Default Risk Analysis and Credit Profile Dashboard
+# 📊 Loan Default and Credit Risk Analytics Pipeline
 
-This Power BI dashboard analyzes loan issuance and default trends from **2007 to 2018** across borrower risk categories and loan purposes. It identifies **default-prone segments**, highlights **purpose-driven patterns**, and enables **data-driven risk management** for lending institutions.
+This project presents an end-to-end credit risk analytics framework combining data preprocessing, risk segmentation, machine learning evaluation, and interactive dashboarding to support data-driven lending decisions.
+
+The solution analyzes loan issuance and default trends (2007–2018) across borrower risk categories and loan purposes to identify high-risk segments, evaluate default concentration, and improve decision transparency.
 
 ---
 
 ## 🎯 Project Objective
 
-To provide an interactive dashboard for stakeholders to:
+To design a structured credit risk monitoring system that:
 
-- Understand trends in **loan defaults** across **FICO risk bands**
-- Track how **loan purposes** relate to default rates
-- Visualize how defaults evolved **over time**
-- Support decision-making on **risk mitigation** strategies
+- Segments borrowers by **FICO and DTI risk bands**
+- Quantifies default concentration by **loan purpose**
+- Tracks portfolio performance over time
+- Supports threshold-based risk mitigation strategies
+- Enables evidence-based decision support for lending institutions
 
 ---
 
-## 📁 Files Included
+## 🔬 Analytical Workflow
+
+The project follows a structured analytics pipeline:
+
+### 1️⃣ Data Preparation
+- Data cleaning and validation  
+- Handling missing values  
+- Risk band categorization (FICO & DTI segmentation)  
+
+### 2️⃣ Feature Engineering
+- Default rate computation by risk band  
+- Loan bucket categorization  
+- Aggregated KPI generation  
+- Temporal trend structuring (year-wise analysis)  
+
+### 3️⃣ Risk Evaluation
+- Precision–Recall trade-off analysis  
+- Threshold sensitivity analysis  
+- Risk band impact assessment  
+
+### 4️⃣ Visualization & Decision Support
+- KPI dashboard modeling (Power BI)  
+- Interactive filtering (Risk Band, Loan Purpose, Year)  
+- Portfolio-level performance monitoring  
+
+---
+
+## 📊 Dashboard Overview
+
+**Time Frame:** 2007 – 2018  
+**Total Loans Analyzed:** ~1,000,000  
+**Total Defaulted Loans:** ~269,000  
+**Average FICO Score:** ~698  
+
+### Key Dashboard Features
+
+- Risk segmentation by **FICO band**  
+- Default rate analysis by **DTI band**  
+- Loan purpose concentration analysis  
+- Year-over-year default trend tracking  
+- Portfolio KPIs for strategic monitoring  
+
+> ⚠️ Note: `.pbix` files cannot be previewed in GitHub. Download locally and open in Power BI Desktop for full interactivity.
+
+---
+
+## 🔎 Key Insights
+
+- Borrowers with **FICO scores below 650** exhibit significantly higher default rates.  
+- Certain loan purposes (e.g., debt consolidation) contribute disproportionately to default volume.  
+- Default rates peaked mid-period before stabilizing.  
+- Risk band segmentation improves early identification of vulnerable borrower groups.  
+- Threshold tuning significantly impacts recall vs precision trade-offs in default prediction.  
+
+---
+
+## 📁 Repository Structure
 
 | File | Description |
 |------|-------------|
-| `Loan Default Risk Analysis and Credit Profile Dashboard.pbix` | Power BI dashboard file |
-| `dashboard_preview.jpeg` | Snapshot preview of the full dashboard |
-| `README.md` | This documentation file |
+| `credit-risk-dashboard.pbix` | Interactive Power BI dashboard |
+| `dashboard_preview.jpeg` | Static preview of the dashboard |
+| `End-to-End Credit Risk Analytics Pipeline.ipynb` | Machine learning workflow and evaluation |
+| `README.md` | Project documentation |
 
 ---
 
-## 📂 Dashboard Details
+## 🛠️ Tools & Technologies
 
-- **Time Frame:** 2007 – 2018  
-- **Total Loans Analyzed:** ~1,000,000  
-- **Total Defaulted Loans:** ~269,000  
-- **Avg. FICO Score:** ~698  
-- **Avg. Age of Borrower:** ~18 years  
-- **Interactive Elements:**
-  - Filter by **Risk Band, Loan Purpose, Year**
-  - Tooltips for yearly breakdown
-  - Purpose-wise default comparison
+- Python (Data preprocessing & modeling)  
+- Power BI (Dashboard & visualization)  
+- Pandas / NumPy (Data manipulation)  
+- Scikit-learn (Model evaluation)  
+- Risk segmentation framework (FICO & DTI banding)  
 
 ---
 
-## 📌 How to Use
+## 🔐 Data & Ethics
 
-1. Download the `.pbix` file from this repository.
-2. Open it using **Power BI Desktop**.
-3. Explore filters, charts, and KPIs to analyze loan performance.
+This dataset was used strictly for academic and portfolio demonstration purposes.
 
-> ⚠️ **Note**: GitHub does not preview `.pbix` files in-browser. Download to access it locally.
-
+- No personally identifiable information (PII) was used.  
+- The analysis is intended for educational and decision-support modeling demonstrations.  
+- Results should not be interpreted as financial advice.  
 
 ---
 
-## 📊 Data Source
+## 📚 Data Source
 
-Panuganti, Manasa. (2025). *Open Science Workflow for Loan & Credit Card Default Prediction (v1.0)*.  
-[https://doi.org/10.5281/zenodo.16804306](https://doi.org/10.5281/zenodo.16804306)
-
-Google Drive CSV Mirror: [Download Dataset](https://drive.google.com/file/d/1vI7bcz-m90Y2JMTkiwZploAbrbh4bq3V/view?usp=sharing)
----
-
-## 📌 Notes
-
-- Tooltips include detailed trends by year for total defaulted loans.
-- File size may prevent in-browser rendering — use local Power BI Desktop for full interactivity.
+Panuganti, Manasa. (2025).  
+*Open Science Workflow for Loan & Credit Card Default Prediction (v1.0).*  
+Zenodo.  
+https://doi.org/10.5281/zenodo.16804306  
 
 ---
 
 ## 👩‍💻 Author
 
 **Muskaan Raheja**  
-Data Analyst | Carleton University  
-[GitHub Profile](https://github.com/MuskaanRaheja03)
-
----
+B.Sc. Computer Science – Carleton University  
+GitHub: https://github.com/MuskaanRaheja03  
